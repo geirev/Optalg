@@ -1,5 +1,6 @@
 # Copyright (c) 2018-2021 NORCE, All Rights Reserved. DIGIRES (PhD Wang)
 import xlwt
+import os 
 
 
 class Record(object):
@@ -114,7 +115,11 @@ class Record(object):
             for col, key in enumerate(keys):
                 worksheet.write(row, col + 1, str(node[key]))
             row += 1
-
+        # Make a results directory
+        if not os.path.exists('results'):
+            os.makedirs('results')
+        if not os.path.exists('results/deterministic_solution'):
+            os.makedirs('results/deterministic_solution')
         file_name = "/sol_" + self.index + ".xls"
         workbook.save("./results/deterministic_solution"+ file_name)
         #workbook.save(path + file_name)

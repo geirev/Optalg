@@ -6,7 +6,7 @@ import sys
 import pandas as pd
 import search
 from untils import record
-sys.path.append('/home/liwa/Desktop/pipt_old')
+# sys.path.append('/home/liwa/Desktop/pipt_old')
 sys.path.append('fitvalue')
 sys.dont_write_bytecode = True
 
