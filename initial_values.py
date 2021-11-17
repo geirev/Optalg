@@ -39,10 +39,14 @@ class PreDictValue(object):
 
         # Set economic parameters for objective function (NPV) /evaluation function
         disc = 0.08
-        wop = 60
-        wgp = 2
-        wwp = 5
-        wwi = 1
+#        wop = 60  # Wrong values
+#        wgp = 2
+#        wwp = 5
+#        wwi = 1
+        wop = 283.05
+        wgp = 0.1
+        wwp = 37.74
+        wwi = 12.58
         wellCost = 1e06
 
         # Calculate initial estimated economic value for each time period
